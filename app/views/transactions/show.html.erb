@@ -11,23 +11,18 @@
 </p>
 
 <p>
-  <strong>Tx type:</strong>
+  <strong>Type:</strong>
   <%= @transaction.tx_type %>
 </p>
 
 <p>
   <strong>Account:</strong>
-  <%= @transaction.account_id %>
+  <%= @transaction.account.name %>
 </p>
 
 <p>
   <strong>Category:</strong>
-  <%= @transaction.category_id %>
-</p>
-
-<p>
-  <strong>User:</strong>
-  <%= @transaction.user_id %>
+  <%= @transaction.category.name %>
 </p>
 
 <p>
@@ -37,11 +32,11 @@
 
 <p>
   <strong>Paid:</strong>
-  <%= @transaction.paid %>
+  <%= @transaction.paid ? 'Yes': 'No' %>
 </p>
 
 <p>
-  <strong>Tx date:</strong>
+  <strong>Date:</strong>
   <%= @transaction.tx_date %>
 </p>
 
